@@ -1,0 +1,22 @@
+{
+  "applications": "*",
+  "changelogDate": "20220203104029",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "type_porta",
+  "fields": [
+    {
+      "fieldName": "libelle",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "TypePorta",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass",
+  "skipClient": true
+}

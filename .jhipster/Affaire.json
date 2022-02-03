@@ -1,0 +1,44 @@
+{
+  "applications": "*",
+  "changelogDate": "20220203104023",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "affaire",
+  "fields": [
+    {
+      "fieldName": "code",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "libelle",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "contact",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "estAffiche",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "comId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "actif",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Affaire",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass",
+  "skipClient": true
+}
