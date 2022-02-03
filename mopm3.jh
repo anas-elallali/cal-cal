@@ -1,0 +1,73 @@
+entity Affaire {
+	code String required,
+    libelle String required,
+    contact String,
+    estAffiche Integer,
+    comId Long,
+    actif Integer required
+}
+
+entity CodeOffre {
+    libelle String required
+}
+
+entity Famille {
+    code String required,
+    libelle String required,
+    ordre Integer
+}
+
+entity Operateur {
+	code String required,
+	libelle String required,
+	seq Long,
+    dateSeq String,
+    contrat String,
+    seqPort Long,
+    seqPortAr Long,
+    seqPortCri Long,
+    seqPortCr Long,
+    libelleAs String
+}
+
+entity Ordre {
+    libelle String required,
+    isInitMvm Boolean
+}
+
+entity Tarif {
+    code String required,
+    libelle String required,
+    ordre Integer,
+    famille String,
+    libelleFamille String,
+    tarifCommunication String,
+    htTarifAlaMinute Float,
+    ttcTarifAlaMinute Float,
+    htTarifAappel Float,
+    ttcTarifAappel Float,
+    dateDebutValide Instant,
+    dateFinValide Instant,
+    dateMaj Instant,
+    commentaires String
+}
+
+
+entity TypePorta {
+    libelle String required
+}
+
+entity Typologie {
+	code String required,
+    libelle String required,
+    ordre Integer required
+}
+
+
+paginate * with pagination
+
+
+service * with serviceClass
+
+skipClient *
+
