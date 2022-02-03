@@ -1,0 +1,75 @@
+{
+  "applications": "*",
+  "changelogDate": "20220203104028",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "tarif",
+  "fields": [
+    {
+      "fieldName": "code",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "libelle",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "ordre",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "famille",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "libelleFamille",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tarifCommunication",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "htTarifAlaMinute",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "ttcTarifAlaMinute",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "htTarifAappel",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "ttcTarifAappel",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "dateDebutValide",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "dateFinValide",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "dateMaj",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "commentaires",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Tarif",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass",
+  "skipClient": true
+}

@@ -1,0 +1,59 @@
+{
+  "applications": "*",
+  "changelogDate": "20220203104026",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "operateur",
+  "fields": [
+    {
+      "fieldName": "code",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "libelle",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "seq",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "dateSeq",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contrat",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "seqPort",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "seqPortAr",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "seqPortCri",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "seqPortCr",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "libelleAs",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Operateur",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass",
+  "skipClient": true
+}
